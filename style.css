@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+h1, p {
+    color: white;
+}
+
+.topbar{
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    align-items: center;
+}
+
+.topbar .nav-link{
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    transition: background-color .15s ease, transform .08s ease;
+    font-weight: 600;
+}
+
+.topbar .nav-link:hover{
+    background: #0062d1;
+    transform: translateY(-2px);
+}
+
+.topbar .nav-link:active{
+    transform: translateY(0);
+}
+
+.topbar .nav-link:focus{
+    outline: 3px solid rgba(0,123,255,0.25);
+    outline-offset: 2px;
+}

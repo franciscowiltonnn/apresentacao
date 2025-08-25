@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- cria a barra de navegação -->
+<nav class="topbar">
+  <a href="index.html" class="nav-link">Sobre Mim</a>
+  <a href="formacao.html" class="nav-link">Formação</a>
+  <a href="https://github.com/franciscowiltonnn/innovationstudios" class="nav-link" target="_blank" rel="noopener">Portfólio</a>
+    <br> <br> <br>
+</nav>
+    
+    <!-- cria o layout do formulário de contato -->
+<form id="contactForm" action="" method="post">
+    <input type="text" name="nome" id="txtnome" placeholder="Digite o assunto...">
+    <br> <br>
+    <textarea name="mensagem" id="campomsg" rows="4" placeholder="Digite sua mensagem aqui..."></textarea>
+    <br> <br>
+    <input name="submit" type="submit" id="submit" value="Enviar">
+</form>
+
+<script>
+// exibe um alerta quando o formulário é supostamente "enviado"
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Mensagem enviada!');
+    });
+  }
+</script>
+
+</body>
+</html>
